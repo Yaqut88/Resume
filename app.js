@@ -1,4 +1,4 @@
-class CV {
+class Resume {
     constructor(name, age, telephone, email) {
         this.name = name;
         this.age = age;
@@ -19,7 +19,7 @@ class CV {
         this.abilities.push({ ability1, ability2 })
     }
 
-    cvAdd() {
+    resumeAdd() {
         console.log(`Name: ${this.name} Age: ${this.age}  Telephone: ${this.telephone}  Email: ${this.email} `)
         console.log("Education:");
         this.education.forEach(e => { console.log(`${e.highSchollName}, ${e.degree}, ${e.startYear}, ${e.endYear}`) });
@@ -32,10 +32,10 @@ class CV {
 }
 
 
-let myCV = new CV("Mehri", 35, "0123333333", "mehri@gmail.com");
-myCV.addEducation("Baku State University", "Master", "2010", "2016")
-myCV.addWorkExperience("Company Name", "Position", "2020", "2024")
-myCV.addAbility("")
+let myResume = new Resume("Mehri", 35, "0123333333", "mehri@gmail.com");
+myResume.addEducation("Baku State University", "Master", "2010", "2016")
+myResume.addWorkExperience("Company Name", "Position", "2020", "2024")
+myResume.addAbility("")
 
-myCV.cvAdd();
+myResume.resumeAdd();
 
